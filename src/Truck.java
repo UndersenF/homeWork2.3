@@ -4,6 +4,13 @@ public class Truck extends Transport {
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void check() {
+        super.check();
+        checkEngine();
+        checkTrailer();
+    }
+
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
